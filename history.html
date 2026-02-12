@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto | Ride History</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile-container" style="padding: 24px;">
+        <div class="top-nav">
+            <button class="back-btn" onclick="history.back()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <h2 class="page-title" style="flex: 1; text-align: center;">Ride History</h2>
+            <div style="width: 40px;"></div>
+        </div>
+
+        <div class="route-list-container" style="padding: 10px 0;">
+            <div class="route-card-list">
+                <div class="route-item-card">
+                    <div class="route-main-info" style="padding: 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span
+                                style="font-size: 0.8rem; background: var(--soft-green); color: var(--primary-green-dark); padding: 4px 10px; border-radius: 8px; font-weight: 700;">COMPLETED</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Feb 12, 2026</span>
+                        </div>
+                        <h4 class="route-name">Central Hospital to Market</h4>
+                        <p style="font-size: 0.9rem; color: var(--dark-charcoal); font-weight: 700;">₹55.00</p>
+                    </div>
+                </div>
+                <div class="route-item-card">
+                    <div class="route-main-info" style="padding: 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span
+                                style="font-size: 0.8rem; background: var(--soft-green); color: var(--primary-green-dark); padding: 4px 10px; border-radius: 8px; font-weight: 700;">COMPLETED</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Feb 10, 2026</span>
+                        </div>
+                        <h4 class="route-name">Bus Stand to Village School</h4>
+                        <p style="font-size: 0.9rem; color: var(--dark-charcoal); font-weight: 700;">₹30.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

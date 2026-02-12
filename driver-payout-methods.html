@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto Driver | Payout Methods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile-container" style="padding: 24px;">
+        <div class="top-nav">
+            <button class="back-btn" onclick="history.back()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <h2 class="page-title" style="flex: 1; text-align: center;">Payout Methods</h2>
+            <div style="width: 40px;"></div>
+        </div>
+
+        <div class="payout-content" style="margin-top: 32px;">
+            <!-- Primary Account Card -->
+            <div class="payout-card">
+                <div class="payout-header">
+                    <div class="payout-chip">Primary Account</div>
+                    <div class="payout-type">VISA</div>
+                </div>
+                <div class="payout-details">
+                    <p>Bank Account</p>
+                    <h3>**** **** 8820</h3>
+                    <p style="margin-top: 10px; opacity: 0.6; font-size: 0.8rem;">Auto-Settle: Enabled</p>
+                </div>
+            </div>
+
+            <h4 style="margin-bottom: 20px; color: var(--dark-charcoal); font-weight: 700;">Mobile Wallets</h4>
+
+            <div class="wallet-list">
+                <div class="wallet-item">
+                    <div class="wallet-logo">🅱️</div>
+                    <div class="wallet-info">
+                        <span class="wallet-name">bKash</span>
+                        <span class="wallet-number">+91 1712 *** 678</span>
+                    </div>
+                    <div class="status-check">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="4">
+                            <path d="M20 6L9 17l-5-5" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="wallet-item">
+                    <div class="wallet-logo nagad">🇳</div>
+                    <div class="wallet-info">
+                        <span class="wallet-name">Nagad</span>
+                        <span class="wallet-number">+91 1712 *** 345</span>
+                    </div>
+                    <div class="status-check" style="background: transparent; border: 2px solid var(--border-light);">
+                    </div>
+                </div>
+            </div>
+
+            <h4 style="margin: 32px 0 20px; color: var(--dark-charcoal); font-weight: 700;">Add New Method</h4>
+
+            <button class="add-payout-btn">
+                <span>+ Add Bank Account / Wallet</span>
+            </button>
+
+            <p
+                style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 32px; line-height: 1.5;">
+                Earnings are settled every Monday at 12:00 AM to your primary account.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto Driver | Ride Completed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile-container" style="background: #f9f9f9; padding: 24px;">
+        <div class="summary-content"
+            style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div class="success-icon" style="font-size: 4rem; color: var(--primary-green); margin-bottom: 24px;">💰
+            </div>
+            <h2 style="margin-bottom: 8px;" data-i18n="trip-completed">Trip Completed</h2>
+            <p style="color: var(--text-muted); margin-bottom: 40px;" data-i18n="excellent-work">Excellent work today!
+            </p>
+
+            <div class="summary-card" style="width: 100%;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 24px; text-align: left;">
+                    <div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="driver-earnings">Earnings
+                        </p>
+                        <h4 style="font-size: 1.2rem; color: var(--primary-green);">₹112.50</h4>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Distance</p>
+                        <h4 style="font-size: 1.2rem;">3.2 km</h4>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div style="margin: 24px 0;">
+                    <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="collect-cash">Collect Cash</p>
+                    <h1 style="font-size: 3.2rem; color: var(--dark-charcoal);">₹125.00</h1>
+                    <p style="color: var(--text-muted); font-size: 0.85rem;"><span data-i18n="platform-fee">Including
+                            platform fee</span> ₹12.50</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="primary-btn full-width" onclick="window.location.href='driver-home.html'">
+            <span data-i18n="back-home">Back to Home</span>
+        </button>
+    </div>
+</body>
+
+</html>

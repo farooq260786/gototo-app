@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto Driver | OTP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile-container">
+        <div class="top-nav">
+            <button class="back-btn" onclick="history.back()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+            </button>
+        </div>
+        <div class="otp-content">
+            <div class="otp-header">
+                <h2>Driver Verification</h2>
+                <p>Enter the 6-digit code sent to<br><span id="display-phone">+91 1XXX XXXXXX</span></p>
+            </div>
+            <div class="otp-input-container">
+                <input type="tel" maxlength="1" class="otp-input">
+                <input type="tel" maxlength="1" class="otp-input">
+                <input type="tel" maxlength="1" class="otp-input">
+                <input type="tel" maxlength="1" class="otp-input">
+                <input type="tel" maxlength="1" class="otp-input">
+                <input type="tel" maxlength="1" class="otp-input">
+            </div>
+            <div class="timer-section">
+                <p id="timer-text">Resend in <span id="timer-count">00:59</span></p>
+                <button id="resend-link" class="resend-btn" disabled>Resend OTP</button>
+            </div>
+            <button class="primary-btn" id="verify-btn">Verify Driver Account</button>
+        </div>
+        <div class="login-footer">
+            <p>Safe & Reliable Partner Transport</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

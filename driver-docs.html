@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto Driver | Documents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile-container" style="padding: 24px;">
+        <div class="top-nav">
+            <h2 class="page-title" style="flex: 1; text-align: center;" data-i18n="upload-docs">Upload Documents</h2>
+        </div>
+
+        <div class="doc-content" style="flex: 1; overflow-y: auto;">
+            <p style="color: var(--text-muted); text-align: center; margin-bottom: 32px;" data-i18n="verify-msg">Please
+                provide the following
+                documents to verify your account.</p>
+
+            <div class="doc-card" onclick="this.style.borderColor='#22c55e'">
+                <div class="upload-icon">🪪</div>
+                <strong data-i18n="license">Driving License</strong>
+                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="license-sub">Front & Back
+                    Page</span>
+            </div>
+
+            <div class="doc-card" onclick="this.style.borderColor='#22c55e'">
+                <div class="upload-icon">📄</div>
+                <strong data-i18n="rc">Vehicle RC</strong>
+                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="rc-sub">Original Registration
+                    Page</span>
+            </div>
+
+            <div class="doc-card" onclick="this.style.borderColor='#22c55e'">
+                <div class="upload-icon">📷</div>
+                <strong data-i18n="profile-photo">Profile Photo</strong>
+                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="profile-sub">Clear selfie with
+                    vehicle</span>
+            </div>
+        </div>
+
+        <button class="primary-btn full-width" onclick="window.location.href='driver-pending.html'"
+            style="margin-top: 20px;">
+            <span data-i18n="submit-verif">Submit for Verification</span>
+        </button>
+    </div>
+</body>
+
+</html>

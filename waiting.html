@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto | Finding Driver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile-container no-padding">
+        <div class="waiting-container">
+            <div class="radar-loader">
+                <div class="radar-circle"></div>
+                <div class="radar-circle"></div>
+                <div class="radar-circle"></div>
+                <div class="finding-icon">🛺</div>
+            </div>
+            <div class="waiting-text">
+                <h2>Finding Nearby Driver...</h2>
+                <p>Matching you with the best Toto in your area</p>
+            </div>
+        </div>
+
+        <!-- Hidden Assigned Card (transitions in via JS) -->
+        <div class="driver-card" style="display: none;" id="assignedCard">
+            <div class="sheet-handle"></div>
+            <div class="driver-info-row">
+                <div class="driver-profile">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Abdul" alt="Driver" class="driver-photo">
+                    <div class="driver-details">
+                        <h4>Abdul Gani</h4>
+                        <p>TR-8820 | 4.9 ⭐</p>
+                    </div>
+                </div>
+                <button class="call-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="eta-box" style="text-align: center; margin: 20px 0;">
+                <span style="color: var(--primary-green); font-weight: 700;">ETA: 4 Minutes</span>
+            </div>
+            <div style="display: flex; gap: 12px;">
+                <button class="primary-btn" style="flex: 2;" id="startTripBtn">Start Journey</button>
+                <button class="emergency-btn"
+                    style="background: #f3f4f6; color: #ef4444; box-shadow: none;">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

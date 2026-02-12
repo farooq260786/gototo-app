@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto | Role Selection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="GoToto - Choose your role to continue your journey.">
+</head>
+
+<body>
+    <div class="mobile-container">
+        <!-- Language Switcher -->
+        <div class="top-nav">
+            <button class="lang-btn" id="lang-toggle">EN / BN</button>
+        </div>
+
+        <div class="selection-content">
+            <!-- Brand Section -->
+            <div class="brand-section">
+                <div class="mini-logo">
+                    <svg width="40" height="40" viewBox="0 0 120 120" fill="none">
+                        <path d="M20 70C20 64.4772 24.4772 60 30 60H90C95.5228 60 100 64.4772 100 70V90H20V70Z"
+                            fill="#FACC15" />
+                        <path d="M30 30H80L95 60H25L30 30Z" fill="#FDE047" fill-opacity="0.8" />
+                        <circle cx="60" cy="55" r="8" fill="#E2E8F0" stroke="#1F2937" stroke-width="2" />
+                    </svg>
+                </div>
+                <h1 class="brand-title" data-i18n="brand">GoToto</h1>
+                <p class="role-tagline" data-i18n="role-tagline">Choose Your Role to Continue</p>
+            </div>
+
+            <!-- Role Buttons -->
+            <div class="role-options">
+                <button class="role-card passenger-btn">
+                    <div class="role-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <span data-i18n="passenger">Passenger</span>
+                </button>
+
+                <button class="role-card driver-btn">
+                    <div class="role-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path
+                                d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12c0-5.52 4.48-10 10-10zm0 4v12">
+                            </path>
+                            <path d="M6 12h12"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </div>
+                    <span data-i18n="driver">Driver</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Optional Footer Hint -->
+        <div class="selection-footer">
+            <p>Need help? <a href="#">Contact Support</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

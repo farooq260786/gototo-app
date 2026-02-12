@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile-container no-padding">
+        <!-- Full Screen Map Background -->
+        <div class="map-view" id="map">
+            <div class="map-overlay"></div>
+
+            <!-- Floating Vehicle Icons -->
+            <div class="vehicle-marker" style="top: 25%; left: 30%; animation-delay: 0.2s;">
+                <div class="marker-dot"></div>
+                <div class="toto-icon-mini">🛺</div>
+            </div>
+            <div class="vehicle-marker" style="top: 45%; left: 65%; animation-delay: 0.8s;">
+                <div class="marker-dot"></div>
+                <div class="toto-icon-mini">🛺</div>
+            </div>
+            <div class="vehicle-marker" style="top: 15%; left: 75%; animation-delay: 1.5s;">
+                <div class="marker-dot"></div>
+                <div class="toto-icon-mini">🛺</div>
+            </div>
+
+            <!-- Current Location Marker -->
+            <div class="user-marker" style="top: 55%; left: 45%;">
+                <div class="user-dot"></div>
+                <div class="user-pulse"></div>
+            </div>
+        </div>
+
+        <!-- Top Navigation / Search -->
+        <div class="map-header">
+            <div class="search-bar">
+                <div class="search-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                </div>
+                <input type="text" placeholder="Where to?" id="location-search">
+                <div class="profile-thumb" onclick="window.location.href='profile.html'" style="cursor: pointer;">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Profile">
+                </div>
+            </div>
+
+            <div class="location-tabs">
+                <button class="active">Home</button>
+                <button>Office</button>
+                <button>Market</button>
+            </div>
+        </div>
+
+        <!-- Floating Action Button -->
+        <button class="fab-location">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+        </button>
+
+        <!-- Bottom Sheet -->
+        <div class="bottom-sheet" id="bottomSheet">
+            <div class="sheet-handle"></div>
+            <div class="sheet-content">
+                <div class="sheet-header">
+                    <h3 data-i18n="nearby-title">Good Morning, User!</h3>
+                    <p data-i18n="nearby-sub">Suggested nearby rides</p>
+                </div>
+
+                <div class="ride-card active">
+                    <div class="ride-info">
+                        <div class="ride-type">
+                            <span class="icon">🛺</span>
+                            <div class="details">
+                                <strong>Toto (Standard)</strong>
+                                <span>3 mins away</span>
+                            </div>
+                        </div>
+                        <div class="price">₹45</div>
+                    </div>
+                </div>
+
+                <button class="primary-btn full-width" id="select-route-btn">
+                    <span data-i18n="select-route">Select Route</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

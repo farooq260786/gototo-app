@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto Driver | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile-container">
+        <div class="top-nav">
+            <button class="back-btn" onclick="history.back()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="login-content">
+            <div class="illustration-container">
+                <div class="toto-svg">
+                    <svg width="220" height="160" viewBox="0 0 220 160" fill="none">
+                        <!-- Modern Yellow Toto Rickshaw -->
+                        <path d="M40 100C40 88.9543 48.9543 80 60 80H160C171.046 80 180 88.9543 180 100V130H40V100Z"
+                            fill="#FACC15" />
+                        <path d="M55 40H145L170 80H50L55 40Z" fill="#FDE047" fill-opacity="0.8" />
+                        <circle cx="70" cy="135" r="18" fill="#1F2937" stroke="white" stroke-width="4" />
+                        <circle cx="150" cy="135" r="18" fill="#1F2937" stroke="white" stroke-width="4" />
+                        <rect x="105" y="65" width="10" height="15" fill="#1F2937" rx="5" /> <!-- Driver simulation -->
+                        <path d="M50 80L45 130" stroke="#1F2937" stroke-width="5" stroke-linecap="round" />
+                        <path d="M170 80L175 130" stroke="#1F2937" stroke-width="5" stroke-linecap="round" />
+                        <circle cx="110" cy="90" r="10" fill="#E2E8F0" stroke="#1F2937" stroke-width="2" />
+                        <!-- Headlight -->
+                    </svg>
+                </div>
+            </div>
+
+            <div class="login-text">
+                <h2 data-i18n="login-title">Driver Login</h2>
+                <p data-i18n="login-sub">Welcome back! Please enter your phone number to continue.</p>
+            </div>
+
+            <div class="login-form">
+                <div class="input-group">
+                    <span class="prefix">+91</span>
+                    <input type="tel" id="driver-phone" placeholder="017XXX XXXXX" maxlength="11">
+                </div>
+                <button class="primary-btn" id="send-otp-btn">
+                    <span data-i18n="send-otp">Send OTP</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="login-footer">
+            <p>“Become a GoToto Partner Today”</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById("send-otp-btn").addEventListener("click", function () {
+        const phone = document.getElementById("driver-phone").value.trim();
+
+        if (phone.length < 10) {
+            alert("Please enter valid phone number");
+            return;
+        }
+
+        // Save phone temporarily
+        localStorage.setItem("driverPhone", phone);
+
+        // Redirect to OTP page
+        window.location.href = "driver-otp.html";
+    });
+</script>
+
+
+</html>

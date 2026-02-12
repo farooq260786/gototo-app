@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto | Splash Screen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Meta tags for SEO and Social -->
+    <meta name="description" content="GoToto - Live Ride. Safe Ride. Real-time transport tracking made simple.">
+</head>
+
+<body>
+    <div class="splash-container">
+        <div class="gradient-overlay"></div>
+
+        <div class="content">
+            <div class="logo-wrapper">
+                <div class="logo-icon-svg">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Custom Yellow Toto Vector -->
+                        <path d="M20 70C20 64.4772 24.4772 60 30 60H90C95.5228 60 100 64.4772 100 70V90H20V70Z"
+                            fill="#FACC15" />
+                        <path d="M30 30H80L95 60H25L30 30Z" fill="#FDE047" fill-opacity="0.8" />
+                        <rect x="35" y="85" width="10" height="20" rx="2" fill="#1F2937" />
+                        <rect x="75" y="85" width="10" height="20" rx="2" fill="#1F2937" />
+                        <path d="M25 60L20 90" stroke="#1F2937" stroke-width="4" stroke-linecap="round" />
+                        <path d="M95 60L100 90" stroke="#1F2937" stroke-width="4" stroke-linecap="round" />
+                        <circle cx="60" cy="55" r="8" fill="#E2E8F0" stroke="#1F2937" stroke-width="2" />
+                    </svg>
+                </div>
+                <h1 id="brand-name">GoToto</h1>
+                <p id="tagline">Live Ride. Safe Ride.</p>
+            </div>
+        </div>
+
+        <div class="loader-container">
+            <div class="loader-track">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        setTimeout(() => {
+            window.location.href = 'role-selection.html';
+        }, 3500);
+    </script>
+</body>
+
+</html>

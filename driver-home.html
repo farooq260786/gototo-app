@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoToto Driver | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile-container no-padding">
+        <!-- Living Map Background -->
+        <div class="map-view" id="map">
+            <div class="map-overlay"></div>
+            <!-- Nearby passenger requests (indicated by pulses when online) -->
+            <div class="request-pulse" id="requestMarker" style="display: none; top: 40%; left: 50%;">
+                <div class="user-pulse"></div>
+                <div class="user-dot"></div>
+            </div>
+        </div>
+
+        <!-- Top Earnings Widget -->
+        <div class="map-header">
+            <div style="display: flex; justify-content: flex-end; margin-bottom: 12px;">
+                <div class="profile-thumb" onclick="window.location.href='driver-profile.html'"
+                    style="cursor: pointer; border: 3px solid white; border-radius: 50%; width: 50px; height: 50px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Abdul" alt="Profile"
+                        style="width: 100%; height: 100%; background: var(--soft-green);">
+                </div>
+            </div>
+            <div class="earnings-card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <p class="stat-label" data-i18n="driver-earnings">Today's Earnings</p>
+                        <h2 id="dailyEarnings">₹0.00</h2>
+                    </div>
+                    <div class="status-indicator">
+                        <span id="statusBadge" class="offline-badge">Offline</span>
+                    </div>
+                </div>
+                <div class="earnings-grid" style="margin-top: 20px;">
+                    <div class="stat-item">
+                        <p class="stat-val" id="tripCount">0</p>
+                        <p class="stat-label">Trips</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-val">4.9</p>
+                        <p class="stat-label">Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Go Online/Offline Toggle -->
+        <div class="status-toggle-container">
+            <button class="toggle-btn offline" id="goOnlineBtn">
+                <span id="toggleText" data-i18n="driver-online">Go Online</span>
+            </button>
+        </div>
+
+        <!-- Incoming Request Sheet (Hidden by default) -->
+        <div class="request-sheet" style="display: none;" id="rideRequestSheet">
+            <div class="sheet-handle"></div>
+            <div style="text-align: center; margin-bottom: 24px;">
+                <div class="timer-ring" id="requestTimer" style="margin: 0 auto 12px;">10</div>
+                <h3 data-i18n="new-request">New Ride Request!</h3>
+            </div>
+
+            <div class="location-summary" style="margin-bottom: 20px;">
+                <div class="loc-item">
+                    <div class="loc-indicator green"></div>
+                    <div class="loc-details">
+                        <p class="name">Main Bazar (2.1 km)</p>
+                    </div>
+                </div>
+                <div class="loc-item">
+                    <div class="loc-indicator red"></div>
+                    <div class="loc-details">
+                        <p class="name">Railway Station North</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; padding: 16px; background: #f3f4f6; border-radius: 16px;">
+                <span style="font-weight: 700; color: var(--primary-green-dark);" data-i18n="est-fare">Estimated
+                    Fare</span>
+                <span style="font-size: 1.4rem; font-weight: 800;">₹125.00</span>
+            </div>
+
+            <div class="accept-reject-btns">
+                <button class="emergency-btn" id="rejectRideBtn"
+                    style="background: #fee2e2; color: #ef4444; box-shadow: none;" data-i18n="decline">Decline</button>
+                <button class="primary-btn" id="acceptRideBtn" data-i18n="accept-ride">Accept Ride</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Driver Home Logic Integration (already in script.js, but ensures linking)
+    </script>
+</body>
+
+</html>
